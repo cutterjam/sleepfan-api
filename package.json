@@ -1,0 +1,12 @@
+{
+  "name": "sleepfan-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test",
+    "deploy": "npx wrangler@4 deploy",
+    "dev": "npx wrangler@4 dev"
+  }
+}

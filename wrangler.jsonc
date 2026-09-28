@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sleepfan-api",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-28",
+  "kv_namespaces": [{ "binding": "PLAYER_INDEX" }],
+  "build": { "command": "node scripts/build-player-index.js" },
+  "triggers": { "crons": ["0 10 * * *"] }
+}
