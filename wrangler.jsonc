@@ -3,6 +3,12 @@
   "name": "sleepfan-api",
   "main": "src/index.js",
   "compatibility_date": "2026-09-28",
+  "routes": [
+    {
+      "pattern": "fantasy.cutterwhatever.com",
+      "custom_domain": true
+    }
+  ],
   "kv_namespaces": [
     {
       "binding": "PLAYER_INDEX"
