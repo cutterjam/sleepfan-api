@@ -27,7 +27,7 @@ To include it, record a user-provided screenshot/list in `data/trading-block.js`
 ## Deploy from GitHub
 
 1. In Cloudflare **Workers & Pages**, create a Worker using the GitHub repository `cutterjam/sleepfan-api`, branch `main`.
-2. Use deployment command `npm run deploy`. No separate build command is needed: Wrangler runs the configured player-index build before publishing.
+2. Use deployment command `npm run deploy`. Leave Cloudflare's separate build command blank: the deploy script builds the player index before invoking Wrangler.
 3. Cloudflare provisions the `PLAYER_INDEX` KV binding from `wrangler.jsonc`. The configured daily trigger refreshes player details at 10:00 UTC.
 4. Open the deployment's provided `workers.dev` URL followed by `/api/summary`.
 
